@@ -49,4 +49,8 @@ class Manager : public Employee {
         int getSalary(){
             return Employee::getSalary() + bonus;
         }
+        void display() {
+		cout << "Name: " << getName() << endl;
+		cout << "Salary: " << getSalary() << endl;
+	    }
 };
